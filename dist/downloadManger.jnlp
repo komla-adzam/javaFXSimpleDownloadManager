@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="downloadManger.jnlp">
+  <information>
+    <title>downloadManger</title>
+    <vendor>kbee</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="downloadManger.jar" size="7645" download="eager" />
+    <jar href="lib\beansbinding-1.2.1.jar" size="631289" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\jfoenix-8.0.4.jar" size="2487326" download="eager" />
+    <jar href="lib\org-netbeans-modules-java-j2seproject-copylibstask.jar" size="26716" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="downloadManger" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="downloadmanger.DownloadManger"  name="downloadManger" />
+  <update check="always"/>
+</jnlp>
