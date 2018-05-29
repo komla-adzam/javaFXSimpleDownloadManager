@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="264.0" prefWidth="550.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="downloadmanger.FXMLDocumentController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #049E9E;">
+         <children>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="25.0" prefWidth="600.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXButton fx:id="closeButton" contentDisplay="GRAPHIC_ONLY" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="30.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="CLOSE" size="15" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="559.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="30.0" prefWidth="140.0" text="Downlaod Address" textFill="#211010">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="downloadAddressTextField" focusColor="#211010" prefHeight="30.0" prefWidth="350.0" promptText="Download Address..." unFocusColor="#a8a1a1">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="559.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="30.0" prefWidth="140.0" text="File Name" textFill="#211010">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="fileNameTextField" focusColor="#211010" prefHeight="30.0" prefWidth="350.0" promptText="File Name..." unFocusColor="#a8a1a1">
+                     <HBox.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </HBox.margin>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="135.0" prefHeight="60.0" prefWidth="559.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton fx:id="downloadButton" contentDisplay="GRAPHIC_ONLY" onAction="#handleButtonAction" prefHeight="49.0" prefWidth="50.0" style="-fx-background-color: #0DDCCE;">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="DOWNLOAD" size="24" />
+                     </graphic>
+                  </JFXButton>
+                  <VBox alignment="CENTER" prefHeight="60.0" prefWidth="450.0">
+                     <HBox.margin>
+                        <Insets left="20.0" right="10.0" />
+                     </HBox.margin>
+                     <children>
+                        <JFXProgressBar fx:id="downloadProgressBar" prefHeight="1.0" prefWidth="461.0">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </JFXProgressBar>
+                        <Label fx:id="downloadLabel" alignment="CENTER" prefHeight="30.0" prefWidth="200.0" textFill="#211010">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
